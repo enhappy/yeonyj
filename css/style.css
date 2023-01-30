@@ -2,6 +2,7 @@
 @import 'reset.css';
 @import 'sub_layout.css';
 
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
@@ -49,6 +50,7 @@
 	color:#5f6368;
 	transition-duration:0.2s;
 }
+#header .inner #gnb li.on a,
 #header .inner #gnb li a:hover {
 	border:1px solid #1967d2;
 	border-radius:4px;
@@ -285,7 +287,7 @@
 #brand .inner > h1 {
 	margin-left:110px;
 	margin-bottom:45px;
-	font: bold 36px/44px 'Noto Sans';
+	font: bold 36px/44px 'Lora';
 	color:#5f6368;
 }
 #brand .inner > h1:before {
@@ -312,7 +314,7 @@
 	color:#aeaeae;
 }
 #brand .inner .wrap article i {	
-	font-size:80px;
+	font-size:130px;
   line-height: 40px;
   color:#999;
   transition: all 300ms ease;
@@ -320,17 +322,17 @@
 }
 #brand .inner .wrap article i:hover {
 	color:#174ea6;
-	transform: rotate(-5deg) scale(1.5);
+  transform: rotate(-5deg) scale(1.5);
 }
 
 
 
 /* news 영역 */
 #news {
-	width:100%;
+	width: 100%;
 	padding: 70px 0;
-  margin-bottom: 70px;
-	border-bottom:1px solid #999;
+	margin-bottom: 70px;
+	border-bottom: 1px solid #999;
 }
 #news .inner {
 	position:relative;
@@ -342,7 +344,7 @@
 }
 #news .inner h1 {
 	margin-bottom:30px;
-	font: bold 36px/44px 'Noto Sans';
+	font: bold 36px/44px 'lora';
 	color:#5f6368;	
 }
 #news .inner .wrap article {
@@ -361,9 +363,6 @@
 	width: 100%;
     height: 100%;
     object-fit: cover;
-}
-#news .inner .wrap article .pic:hover img {
-	transform: scale(1.5);
 }
 #news .inner .wrap article .pic + div {
 	flex-basis: 67%;
@@ -391,7 +390,7 @@
 	text-shadow: 1px 1px 1px #999;
 }
 #news .inner .wrap article em {
-	font: normal 14px/10px 'arial';
+	font: normal 11px/12px 'arial';
 	color:#999;
 }
 
@@ -421,8 +420,9 @@
 
 /* gallery */
 #gallery {
-	width:100%;
+	width: 100%;
 	padding: 70px 0 40px 0;
+	margin: 0 0 70px 0;
 }
 #gallery > .inner {
 	position:relative;
@@ -438,7 +438,7 @@
 }
 #gallery .inner article h1 {
 	margin-bottom:50px;
-	font: bold 36px/44px 'Noto Sans';
+	font: bold 36px/44px 'lora';
 	color:#5f6368;	
 }
 #gallery .inner .wrap > article > div {
@@ -467,6 +467,10 @@
   text-align:center;
   line-height:35px;  
   box-shadow:0px 3px 5px -1px rgb(0 0 0 / 20%);  
+}
+#gallery .inner .wrap article .galleryList li strong {
+	font: 700 24px/32px 'arial';
+	color:#000;	
 }
 #gallery .inner .wrap article .galleryList li p {
 	position:relative;
@@ -500,6 +504,7 @@
 	padding: 50px 0;
 	background: url(../img/main/banner.jpg) no-repeat center/cover fixed;
 	filter: grayscale(100%);
+	margin: 0 0 70px 0;
 }
 #banner .inner {
 	width: 1180px;
@@ -507,12 +512,12 @@
 }
 #banner .inner h1 {
 	margin-bottom: 30px;
-	font: bold 36px/44px 'Open Sans';
+	font: bold 36px/44px 'lora';
 	color: #fff;
 	text-align: center;	
 }
 #banner .inner p {
-	font: 18px/28px 'Open Sans';
+	font: 18px/28px 'Roboto';
 	color: #5f6368;
 	text-align: center;
 }
@@ -527,7 +532,7 @@
   overflow: hidden; 
 }
 #gallery-2 h1 {
-  font: normal 24px/1 "Noto Sans";
+  font: normal 24px/32px "Roboto";
   color: #000;
   letter-spacing: 1px;
 }
@@ -618,10 +623,10 @@
 
 /* comments 영역 */
 #comments {
-	width:100%;
+	width: 100%;
 	padding: 70px 0;
-  margin-bottom: 70px;	
-	border-bottom:1px solid #999;
+	margin-bottom: 70px;
+	border-bottom: 1px solid #999;
 }
 #comments .inner {
 	position:relative;
@@ -635,7 +640,7 @@
 }
 #comments .inner h2 {
 	margin-bottom:50px;
-	font: bold 36px/44px 'Roboto';
+	font: bold 36px/44px 'lora';
 	color:#5f6368;	
 }
 #comments .inner .wrap article {
@@ -702,9 +707,8 @@
 
 /* faq */
 #faqSection {
-	width:100%;
+	width: 100%;
 	padding: 70px 0;
-  margin-bottom: 70px;	
 }
 #faqSection .inner {
 	position:relative;
@@ -715,7 +719,7 @@
 }
 #faqSection h1 {
 	margin-bottom: 50px;
-  font: bold 36px/44px 'Noto Sans';
+  font: bold 36px/44px 'lora';
   color: #5f6368;
 }
 .tab {
@@ -833,7 +837,7 @@
 	top:70px;
 	left:0;	
 	width: 30%;
-	font: 11px/16px 'arial';
+	font: 11px/14px 'arial';
 	color: #fff;		
 }
 #footer .inner p {
