@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+  color:#181818;
+}
+body {
+  font-weight:400;
+  font-size:14px;
+  font-family: 'Roboto', 'Noto Sans', sans-serif;
+  txt-redering: optimizeLegibility;
+  -webkit-font-smoothing:antialased;
+  color:#181818;
+  /* font-family: 'Open Sans', sans-serif;*/
+}
+
+
+
+
+
+
+
+.wrap:after {
+	content:""; display:block; clear:both;
+}
+
+.offScreen {
+    position: absolute;
+    top: -9999px;
+    overflow: hidden;
+}
+.txtBar {
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    margin: 2px 11px 0 11px;
+    background: #999;
+    vertical-align: middle;
+}
+
+
+
+/* form */
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
