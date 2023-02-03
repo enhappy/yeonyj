@@ -5,13 +5,16 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-li {
+ul, ol, li {
 	list-style: none;
 }
+
+/* a link */
 a {
 	text-decoration: none;
   color:#181818;
 }
+
 body {
   font-weight:400;
   font-size:14px;
@@ -24,18 +27,28 @@ body {
 
 
 
+/* form */
+fieldset {
+  border: none;
+}
 
+/* button */
+/* form */
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+button:hover {
+  background: #333;
+  color: #fff;
+}
 
 
 
 .wrap:after {
 	content:""; display:block; clear:both;
-}
-
-.offScreen {
-    position: absolute;
-    top: -9999px;
-    overflow: hidden;
 }
 .txtBar {
     display: inline-block;
@@ -45,13 +58,21 @@ body {
     background: #999;
     vertical-align: middle;
 }
-
-
-
-/* form */
-button {
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  outline: none;
+/* 접근성 */
+.hidden {
+  position: absolute;
+  top: -99999999px;
+  opacity: 0;
 }
+.offScreen {
+  position: absolute;
+  top: -9999px;
+  overflow: hidden;
+}
+
+table {
+	border-collapse:collapse;
+}
+
+
+/* heading 클래스 추가 */

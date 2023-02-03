@@ -198,7 +198,7 @@
 
 #header .inner .mainMenu_mo h1 {
 	padding-bottom: 20px;
-	border-bottom: 1px solid #fff;
+	borgit commit -m "수정사항 "der-bottom: 1px solid #fff;
 }
 #header .inner .mainMenu_mo h1 a {
 	display:block;
@@ -420,7 +420,7 @@
 	font: 700 80px/55px 'arial';
 	color:lightgray;
 	text-indent:-5px;
-	text-shadow: 1px 1px 1px #999;
+	text-shadow: 1px 1px 1px #ddd;
 }
 #news .inner .wrap article em {
 	font: normal 11px/12px 'arial';
@@ -1020,7 +1020,7 @@
 	}
 	#news .inner .wrap article .pic + div {
     flex-basis: 75%;
-}
+  }
 
 	
 
@@ -1218,12 +1218,12 @@
 	}
 	#comments .inner .wrap article p {
     font: 14px/20px 'arial';
-}
-#comments .inner .wrap article .pic div {
+  }
+  #comments .inner .wrap article .pic div {
 	width: 45px;
 	height: 45px;
 	margin-right: 10px;
-}
+  }
 
 
 	/* faqSection */
@@ -1257,7 +1257,7 @@
 		top:0;
 		right:0;
 		left:auto;
-		width:65%;
+		width:66%;
 	}
 	.footerBox {
 		padding: 70px 0px 10px 10px;

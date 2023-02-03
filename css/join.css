@@ -408,12 +408,12 @@
 
 
 	/* content영역 */
-	.subContent .sub_top {
+	.subContent .sub_visual {
 		height: 200px;
 	}
 	.subContent .inner {
 		width: 100%;
-		min-height: 500px;
+		min-height: 400px;
 	}
 
 
