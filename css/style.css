@@ -226,8 +226,6 @@
 
 
 
-
-
 /* mainVisual 영역 */
 #mainVisual {
 	width:100%;
@@ -318,6 +316,7 @@
 	margin:0 auto;
 }
 #brand .inner > h1 {
+	width:40%;
 	margin-left:110px;
 	margin-bottom:45px;
 	font: bold 36px/44px 'Lora';
@@ -1137,6 +1136,7 @@
     margin-bottom: 0;
 	}
 	#brand .inner > h1 {
+		width:70%;
     margin-bottom: 25px;
     font: bold 24px/32px 'Lora';
 	}
@@ -1162,7 +1162,7 @@
 		font:bold 18px/28px 'arial';
 	}
 	#brand .inner .wrap article p {
-    font: 14px/20px 'arial';
+    font: 13px/18px 'arial';
 	}
 
 
@@ -1204,19 +1204,20 @@
 	#comments .inner .wrap article {
 		width:100%;
 		margin-bottom:30px;
-		padding: 25px 20px 15px;
+		padding:35px 20px 20px;
 	}
 	#comments .inner h2 {
     margin-bottom: 20px;
     font: bold 24px/32px 'lora';
 	}
 	#comments .inner .wrap article strong {
-		margin: 20px 0 15px;
+		margin: 10px 0 15px;
 	}
 	#comments .inner .wrap article strong a {
 		font: bold 24px/32px 'arial';
 	}
 	#comments .inner .wrap article p {
+		margin-bottom: 17px;
     font: 14px/20px 'arial';
   }
   #comments .inner .wrap article .pic div {
@@ -1244,7 +1245,7 @@
 
 	/* footer 영역 */
 	#footer {
-    padding: 30px 20px 20px 10px;
+    padding:50px 0px 40px 10px;
 	}
 	#footer .inner {
     padding:0;
@@ -1252,6 +1253,7 @@
 	#footer .inner h1 {
 		top:-3px;
 		left:15px;
+		font-size:20px;
 	}
 	#footer .inner address {
 		top:0;
@@ -1260,7 +1262,7 @@
 		width:66%;
 	}
 	.footerBox {
-		padding: 70px 0px 10px 10px;
+		padding: 50px 0px 10px 10px;
 		justify-content: flex-start;
 	}
 	.footerBox > div {

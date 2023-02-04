@@ -3,7 +3,7 @@
 
 
 
-/* heder */
+/* heder_sub */
 #header_sub {
 	width:100%;
 	border-bottom:1px solid #dadce0;
@@ -192,7 +192,7 @@
 
 #header_sub .inner .mainMenu_mo h1 {
 	padding-bottom: 20px;
-	border-bottom: 1px solid #fff;
+	borgit commit -m "수정사항 "der-bottom: 1px solid #fff;
 }
 #header_sub .inner .mainMenu_mo h1 a {
 	display:block;
@@ -217,7 +217,6 @@
 	background-color: #fff;
 	color: #1967d2;
 }
-
 
 
 
@@ -268,7 +267,7 @@
 	min-height: 500px;
 }
 .text-center {
-	width:560px;
+	width:50%;
 	margin:0 auto;
 	text-align:center;
 }
@@ -296,7 +295,7 @@
 	width: 90px;
 	height: 3px;
 	border: 1px solid #dee2e6;
-	background-image: linear-gradient(100deg, #f9643d, #fe2a77);
+	background-image: linear-gradient(100deg, #174ea6, #1c7ed6);
 }
 
 
@@ -304,7 +303,8 @@
 
 
 
-/* footer 영역 */
+
+/* footer_sub 영역 */
 #footer_sub {
 	width: 100%;
 	padding: 50px 0 35px 0;
@@ -388,8 +388,7 @@
 
 @media screen and (max-width: 1179px) {
 	
-	/* header영역 */
-	/* header영역 */
+	/* header_sub 영역 */
 	#header_sub .inner {
 		width: 100%;
 		height: 100px; 
@@ -420,7 +419,7 @@
 
 
 
-	/* footer영역 */
+	/* footer_sub 영역 */
 	#footer_sub {
 		padding: 20px 0px 0 20px;
 	}
@@ -436,12 +435,21 @@
 /* 모바일 */
 @media screen and (max-width: 539px) {
 
-	/* header 영역 */
+	/* header_sub 영역 */
+
+	/* text-center 영역 */
+	.subContent .sub_top {
+    height: 180px;
+		padding: 60px 0 30px 0;
+	}
+	.text-center {
+	 width:100%;
+	}
 
 
-	/* footer 영역 */
+	/* footer_sub 영역 */
 	#footer_sub {
-    padding: 30px 20px 20px 10px;
+    padding:50px 0px 40px 10px;
 	}
 	#footer_sub .inner {
     padding:0;
@@ -449,15 +457,16 @@
 	#footer_sub .inner h1 {
 		top:-3px;
 		left:15px;
+		font-size:20px;
 	}
 	#footer_sub .inner address {
 		top:0;
 		right:0;
 		left:auto;
-		width:65%;
+		width:66%;
 	}
 	.footerBox {
-		padding: 70px 0px 10px 10px;
+		padding: 50px 0px 10px 10px;
 		justify-content: flex-start;
 	}
 	.footerBox > div {
@@ -473,6 +482,7 @@
     font: 12px/16px 'arial';
   }
 
+	
 }
 
 
