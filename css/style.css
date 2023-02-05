@@ -1,6 +1,9 @@
 @charset 'utf-8';
 @import 'reset.css';
 @import 'sub_layout.css';
+@import 'join.css';
+@import 'department.css';
+@import 'community.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
@@ -198,7 +201,6 @@
 
 #header .inner .mainMenu_mo h1 {
 	padding-bottom: 20px;
-	borgit commit -m "수정사항 "der-bottom: 1px solid #fff;
 }
 #header .inner .mainMenu_mo h1 a {
 	display:block;
@@ -1136,9 +1138,9 @@
     margin-bottom: 0;
 	}
 	#brand .inner > h1 {
-		width:70%;
+		width:71%;
     margin-bottom: 25px;
-    font: bold 24px/32px 'Lora';
+    font: bold 22px/32px 'Lora';
 	}
 	#brand .inner .wrap article i {
     font-size: 60px;

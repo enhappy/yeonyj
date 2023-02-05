@@ -1,5 +1,5 @@
 @charset 'utf-8';
-@import 'reset.css';
+
 
 
 
@@ -263,12 +263,13 @@
 .subContent .inner {
 	width: 1180px;
 	margin: 0 auto;
-	border: 1px dotted #ddd;
+	outline: 1px solid red;
 	min-height: 500px;
 }
 .text-center {
 	width:50%;
 	margin:0 auto;
+	padding-bottom:30px;
 	text-align:center;
 }
 .text-center h3 {
@@ -418,7 +419,6 @@
 
 
 
-
 	/* footer_sub 영역 */
 	#footer_sub {
 		padding: 20px 0px 0 20px;
@@ -426,6 +426,7 @@
 	#footer_sub .inner {
 		width: 100%;
 	}
+
 
 }
 
@@ -440,12 +441,18 @@
 	/* text-center 영역 */
 	.subContent .sub_top {
     height: 180px;
+		margin-bottom:50px;
 		padding: 60px 0 30px 0;
 	}
 	.text-center {
 	 width:100%;
 	}
-
+	.text-center h4 {
+    font: bold 24px/32px 'Lora';
+	}
+	.text-center h4 + p {
+		font: 14px/20px 'arial';
+	}
 
 	/* footer_sub 영역 */
 	#footer_sub {

@@ -1,0 +1,119 @@
+@charset 'utf-8';
+
+.department .wrap {
+	width:100%;
+}
+.department .wrap article {
+  width: 280px;
+  float: left;
+  margin-right: 20px;
+	box-shadow:0px 3px 9px rgb(0 0 0 / 5%);
+}
+.department .wrap article:last-child {
+  margin-right: 0;
+}
+.department .wrap article .pic {
+  width: 100%;
+  height: 250px;
+	margin-bottom:20px;
+  overflow: hidden;
+}
+.department .wrap article .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.6s;
+}
+.department .wrap article .pic:hover img {
+  transform: scale(1.3);
+}
+
+.department .wrap article h2 {
+  margin-bottom: 10px;
+	font:bold 18px/28px 'arial';
+}
+.department  .wrap article p {
+	margin-bottom: 40px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font: 14px/20px 'arial';
+  color: #777;
+}
+.department .btnView {
+  display:block;
+  width:180px;
+  height:33px;
+  margin:0 auto; 
+  background-color:#174ea6;
+  border-radius:16px;
+  font-weight:bold;
+  font-size:14px;
+	text-align:center;
+  line-height:32px;
+  color:#fff;
+}
+.department .contact {
+  width:100%;
+  margin:15px 0;
+}
+.department .contact li {
+  width:100%;
+  padding:7px 0;
+}
+.department .contact li i {
+  width:20%;
+  text-align:center;
+  font-size:15px;
+  color:#555;
+}
+.department .contact li span {
+  font-size:11px;
+  font-family:'Orbitron';
+  color:#555;
+  letter-spacing:1px;
+}
+
+
+
+
+
+@media screen and (max-width: 1179px) {
+  .department .wrap {
+    padding: 30px 30px;
+  }
+  .department .wrap article {
+      width: 49%;
+      margin-right: 2%;
+      margin-bottom: 60px;
+  }
+  .department .wrap article:nth-of-type(2n) {
+    margin-right: 0;
+  }
+  .department .wrap article .pic {
+    height: 20vmax;
+  }
+
+
+}
+
+
+@media screen and (max-width: 539px) {
+	.department .wrap {
+		padding: 0 30px;
+	}
+	.department .wrap article {
+		width: 100%;
+		margin-right: 0;
+	}
+	.department .wrap article:nth-of-type(2n) {
+		margin-right: 0;
+	}
+	.department .wrap article .pic {
+			height: 30vmax;
+	}
+
+
+}
