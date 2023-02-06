@@ -87,7 +87,43 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptatum veritatis ab sed a iusto minus odit quis voluptatem?</p>
 		 </div>
 		 <div class="wrap">
-			컨텐츠 들어가는 곳
+			<form action="result.html" method="get" id="member">
+        <fieldset>
+          <legend class="hidden">회원 가입 폼 입력 양식</legend>
+          
+          <table>
+            <caption class="hidden">회원가입을 위한 아이디, 비밀번호 입력 테이블</caption>
+            <tbody>
+             
+              <tr>
+                <th scope="row"><label for="userid">User ID</label></th>
+                <td>
+                  <input type="text" name="userid" id="userid" placeholder="아이디를 입력하세요">
+                </td>
+              </tr>
+
+             
+              <tr>
+                <th scope="row"><label for="pwd1">Password</label></th>
+                <td>
+                  <input type="password" name="pwd1" id="pwd1" placeholder="비밀번호를 입력하세요.">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row"><label for="pwd2">Re Password</label></th>
+                <td>
+                  <input type="password" name="pwd2" id="pwd2" placeholder="비밀번호를 재 입력하세요">
+                </td>
+              </tr>
+              <tr>
+                <th colspan="2">
+                  <input type="reset" value="cancel">
+                  <input type="submit" value="submit">
+                </th>
+              </tr>
+          </table>
+        </fieldset>
+      </form>
 		 </div>
 
   </div>

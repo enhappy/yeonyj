@@ -227,7 +227,7 @@
 /* sub content - 탑영역 */
 .subContent {
 	width: 100%;
-	padding: 0 0 150px;
+	padding: 0 0 100px;
 }
 .subContent .sub_top {
 	width: 100%;
@@ -260,10 +260,10 @@
 	padding:0 15px;
   color: #6c757d;
 }
+
 .subContent .inner {
 	width: 1180px;
 	margin: 0 auto;
-	outline: 1px solid red;
 	min-height: 500px;
 }
 .text-center {
