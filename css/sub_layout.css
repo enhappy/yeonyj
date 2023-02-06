@@ -185,6 +185,7 @@
 	right: -300px;
 	z-index: 20;
 	transition: 0.5s;
+	display:none;
 }
 #header_sub .inner .mainMenu_mo.on {
 	right: 0;
@@ -192,7 +193,6 @@
 
 #header_sub .inner .mainMenu_mo h1 {
 	padding-bottom: 20px;
-	borgit commit -m "수정사항 "der-bottom: 1px solid #fff;
 }
 #header_sub .inner .mainMenu_mo h1 a {
 	display:block;
@@ -386,7 +386,6 @@
 
 
 
-
 @media screen and (max-width: 1179px) {
 	
 	/* header_sub 영역 */
@@ -406,6 +405,9 @@
 		z-index:30;
 	}
 
+	#header_sub .inner .mainMenu_mo.on { 
+		display: block;
+	}
 
 	/* content영역 */
 	.subContent .sub_top {
@@ -437,7 +439,10 @@
 @media screen and (max-width: 539px) {
 
 	/* header_sub 영역 */
-
+	#header_sub .inner .mainMenu_mo.on { 
+		display: block;
+	}
+	
 	/* text-center 영역 */
 	.subContent .sub_top {
     height: 180px;

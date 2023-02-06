@@ -30,10 +30,12 @@
 
 .department .wrap article h2 {
   margin-bottom: 10px;
+  padding:0 23px;
 	font:bold 18px/28px 'arial';
 }
 .department  .wrap article p {
 	margin-bottom: 40px;
+  padding:0 23px;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -95,6 +97,13 @@
   .department .wrap article .pic {
     height: 20vmax;
   }
+
+  .department .wrap article h2,
+  .department .wrap article p {
+    padding:0 30px;
+  }
+
+
 
 
 }

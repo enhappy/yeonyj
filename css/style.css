@@ -194,6 +194,7 @@
 	right: -300px;
 	z-index: 20;
 	transition: 0.5s;
+	display:none;
 }
 #header .inner .mainMenu_mo.on {
 	right: 0;
@@ -953,6 +954,7 @@
 
 
 
+
 /* tablet구간 */
 @media screen and (max-width: 1179px) {
 
@@ -971,6 +973,9 @@
 	#header .inner .btnCall {
 		display: block;
 		z-index:30;
+	}
+	#header .inner .mainMenu_mo.on{ 
+    display: block;
 	}
 
 
@@ -1106,7 +1111,10 @@
 @media screen and (max-width: 539px) {
 
 	/* header 영역 */
-
+	#header .inner .mainMenu_mo.on{ 
+    display: block;
+	}
+	
 	/* visual영역 */
 	#mainVisual {
 		margin-bottom: 20px;
