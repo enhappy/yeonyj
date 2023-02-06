@@ -40,8 +40,7 @@
 }
 #tab dd {
   width: 100%;
-  height: auto;
-  min-height:500px;
+  height: 100vh;
   margin-top:100px;
   display: none;
 }
