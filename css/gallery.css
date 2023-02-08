@@ -1,0 +1,138 @@
+@charset 'utf-8';
+
+#gallery {
+  position: relative;
+  width: 100%;
+}
+#gallery #wrap #list {
+  width: 100%;
+  height: auto !important;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s;
+}
+#gallery #wrap #list.on {
+  opacity: 1;
+  transform: translateY(0px);
+}
+#gallery #wrap #list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#gallery #wrap #list li {
+  width: 25%;
+  float: left;
+  padding: 10px;
+}
+#gallery #wrap #list li div {
+  width: 100%;
+  padding: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+#gallery #wrap #list li div a > img {
+  width: 100%;
+  filter: grayscale(90%);
+}
+#gallery #wrap #list li div p {
+  font: 12px/20px "arial";
+  color: #999;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#gallery #wrap #list li div:hover a > img {
+  filter: grayscale(10%);
+}
+
+#gallery #wrap #list li:nth-of-type(3),
+#gallery #wrap #list li:nth-of-type(5),
+#gallery #wrap #list li:nth-of-type(7) {
+  clear:both;
+}
+#gallery #wrap #list li:nth-of-type(5) {
+  margin-left:570px;
+}
+#gallery #wrap #list li:nth-of-type(7) {
+  margin-left:570px;
+}
+#gallery #wrap #list li {
+  position:static !important;
+}
+.gallery-title1 {
+  position: absolute;
+  top: 15px;
+  left: 590px;
+	color:#183153;
+  writing-mode: vertical-rl;
+}
+.gallery-title1 span,
+.gallery-title2 span {
+  font: bold 24px/32px 'arial';
+}
+.gallery-title1 em,
+.gallery-title2 em {
+  font: normal 14px/20px 'arial';
+}
+.gallery-title2 {
+  position: absolute;
+  bottom: -60px;
+  left: 590px;
+  font: bold 24px/32px 'arial';
+	color:#183153;
+  text-orientation: mixed;
+}
+#gallery #wrap #list li div {
+  clip-path: polygon(100% 0, 100% 100%, 82% 100%, 0 99%, 0 13%);
+}
+#gallery #wrap #list li div a > img {
+  clip-path: polygon(100% 0, 100% 100%, 82% 100%, 0 99%, 0 13%);
+}
+
+
+
+
+
+
+@media screen and (max-width: 1179px) {
+  
+  #gallery #wrap #list li {
+    width:49%;
+  }
+  #gallery #wrap #list li:nth-of-type(5) {
+    margin-left:0;
+  }
+  #gallery #wrap #list li:nth-of-type(7) {
+    margin-left:0;
+  }
+  .gallery-title1 {
+    top: -30px;
+    left: 20px;
+    color: #183153;
+    writing-mode: horizontal-tb;
+  }
+  .gallery-title2 {
+    bottom: -30px;
+    left: 20px;
+    color: #183153;
+    writing-mode: none;
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 539px) {
+  #gallery #wrap #list li {
+    width:99%;
+  }
+  #gallery #wrap #list li:nth-of-type(5) {
+    margin-left:0;
+  }
+  #gallery #wrap #list li:nth-of-type(7) {
+    margin-left:0;
+  }
+
+
+}

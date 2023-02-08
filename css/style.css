@@ -6,6 +6,7 @@
 @import 'department.css';
 @import 'community.css';
 @import 'youtube.css';
+@import 'gallery.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
@@ -455,44 +456,44 @@
 
 
 
-/* gallery */
-#gallery {
+/* galleryMain */
+#galleryMain {
 	width: 100%;
 	padding: 70px 0 40px 0;
 	margin: 0 0 70px 0;
 }
-#gallery > .inner {
+#galleryMain > .inner {
 	position:relative;
 	width:1180px;
 	margin:0 auto;
 }
-#gallery .inner .wrap {
+#galleryMain .inner .wrap {
 	width:100%;
 }
-#gallery .inner .wrap article {
+#galleryMain .inner .wrap article {
 	display:flex;
 	justify-content: space-between;
 }
-#gallery .inner article h1 {
+#galleryMain .inner article h1 {
 	margin-bottom:50px;
 	font: bold 36px/44px 'lora';
 	color:#5f6368;	
 }
-#gallery .inner .wrap > article > div {
+#galleryMain .inner .wrap > article > div {
 	width:50%;
 }
 
-#gallery .inner .wrap article .galleryList {
+#galleryMain .inner .wrap article .galleryList {
 	padding-right:220px;
 	counter-reset:list-number;	
 }
-#gallery .inner .wrap article .galleryList li {
+#galleryMain .inner .wrap article .galleryList li {
 	counter-increment:list-number;
 	margin-bottom: 30px;
 	font: 21px/30px 'arial';
 	color:#5f6368;	
 }
-#gallery .inner .wrap article .galleryList li:before {
+#galleryMain .inner .wrap article .galleryList li:before {
 	content:counter(list-number); 
   display:inline-block; 
   width:35px; 
@@ -505,17 +506,17 @@
   line-height:35px;  
   box-shadow:0px 3px 5px -1px rgb(0 0 0 / 20%);  
 }
-#gallery .inner .wrap article .galleryList li strong {
+#galleryMain .inner .wrap article .galleryList li strong {
 	font: 700 24px/32px 'arial';
 	color:#000;	
 }
-#gallery .inner .wrap article .galleryList li p {
+#galleryMain .inner .wrap article .galleryList li p {
 	position:relative;
 	padding-left:50px;
 	font: 16px/24px 'arial';
 	color:#999;	
 }
-#gallery .inner .wrap article li p:before {
+#galleryMain .inner .wrap article li p:before {
 	content: "";
   display: block;
   width: 2px;
@@ -525,7 +526,7 @@
   left: 16px;
   background: #ddd;
 }
-#gallery .inner .wrap .pic {
+#galleryMain .inner .wrap .pic {
 	/* flex-basis: 50%; */
 	width:50%;
 	border-radius:4px;
@@ -1033,17 +1034,17 @@
 	
 
 	/* gallery 영역 */
-	#gallery {
+	#galleryMain {
 		padding: 30px 20px;
 		margin-bottom:50px;
 	}
-	#gallery .inner {
+	#galleryMain .inner {
 		width: 100%;
 	}
-	#gallery .inner .wrap article {
+	#galleryMain .inner .wrap article {
 		width: 99%;
 	}
-	#gallery .inner .wrap article .galleryList {
+	#galleryMain .inner .wrap article .galleryList {
     padding-right: 10px;
 	}
 	.mySwiper .swiper-button-prev, 
@@ -1179,23 +1180,23 @@
 
 
 	/* galllery 영역*/
-	#gallery .inner .wrap article .galleryList {
+	#galleryMain .inner .wrap article .galleryList {
     padding-right: 20px;
 	}
-	#gallery .inner .wrap article {	
+	#galleryMain .inner .wrap article {	
     flex-direction: column;
   }
-	#gallery .inner article h1 {
+	#galleryMain .inner article h1 {
     margin-bottom: 30px;
     font: bold 24px/32px 'lora';
 	}
-	#gallery .inner .wrap article .galleryList li strong {
+	#galleryMain .inner .wrap article .galleryList li strong {
     font: 700 20px/30px 'arial';
 	}
-	#gallery .inner .wrap > article > div {
+	#galleryMain .inner .wrap > article > div {
 		width:100%;
 	}
-	#gallery .inner .wrap .pic {
+	#galleryMain .inner .wrap .pic {
 		width:100%;
 	}
 
