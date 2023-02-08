@@ -1,7 +1,7 @@
 @charset 'utf-8';
 
 .subContent.signUp .inner {
-  min-height: 538px;
+  min-height: 530px;
 }
 .signUp:before {
   position:absolute;
@@ -106,9 +106,9 @@
   border: 1px solid #999;
 }
 .signUp table td p {
-  font: 16px/40px 'arial';
+  margin-top: 0;
+  font: 12px/16px 'arial';
   color: #ff0000;
-  margin-top: 4px;
 }
 .signUp #comments {
   margin-bottom:30px;
@@ -122,6 +122,11 @@
   
   .signUp form {
     width: 95%;
+  }
+  .signUp table td input[type=text],
+  .signUp table td input[type=password], 
+  .signUp table td select {
+    width:70%;
   }
 
 }

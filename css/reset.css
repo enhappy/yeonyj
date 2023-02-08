@@ -51,7 +51,6 @@ textarea::placeholder {
 }
 
 
-
 .wrap:after {
 	content:""; display:block; clear:both;
 }

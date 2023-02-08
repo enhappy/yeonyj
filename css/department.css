@@ -3,6 +3,24 @@
 .department .wrap {
 	width:100%;
 }
+.department .wrap > strong {
+  display: block;
+  margin-bottom:10px;
+  font: bold 20px/30px 'arial';
+  text-align:center;
+}
+.departmentImg {
+  width:60%;
+  margin:0 auto 80px;
+}
+.departmentImg img {
+  width:100%;
+}
+
+
+.department .wrap h4 {
+  font: bold 20px/30px 'arial';
+}
 .department .wrap article {
   width: 280px;
   float: left;
@@ -87,6 +105,9 @@
   .department .wrap {
     padding: 30px 30px;
   }
+  .departmentImg {
+    width:100%;
+  }
   .department .wrap article {
       width: 49%;
       margin-right: 2%;
@@ -112,6 +133,9 @@
 	.department .wrap {
 		padding: 0 20px;
 	}
+  .departmentImg {
+    display:none;
+  }
 	.department .wrap article {
 		width: 100%;
 		margin-right: 0;

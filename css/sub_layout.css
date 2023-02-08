@@ -233,7 +233,7 @@
 	width: 100%;
 	height: 180px;
 	margin-bottom:5px;
-	background: url(../img/subpage/bgDepartment.png) no-repeat right/cover;
+	background: url(../img/subpage/bgTop.png) no-repeat right/cover;
 	filter: grayscale(100%);
 	opacity:0.3;
 }
