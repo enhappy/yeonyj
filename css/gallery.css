@@ -44,7 +44,6 @@
 #gallery #wrap #list li div:hover a > img {
   filter: grayscale(10%);
 }
-
 #gallery #wrap #list li:nth-of-type(3),
 #gallery #wrap #list li:nth-of-type(5),
 #gallery #wrap #list li:nth-of-type(7) {
@@ -59,12 +58,16 @@
 #gallery #wrap #list li {
   position:static !important;
 }
+
 .gallery-title1 {
   position: absolute;
   top: 15px;
   left: 590px;
 	color:#183153;
   writing-mode: vertical-rl;
+  animation-name: aniText1;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
 }
 .gallery-title1 span,
 .gallery-title2 span {
@@ -81,6 +84,9 @@
   font: bold 24px/32px 'arial';
 	color:#183153;
   text-orientation: mixed;
+  animation-name: aniText2;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
 }
 #gallery #wrap #list li div {
   clip-path: polygon(100% 0, 100% 100%, 82% 100%, 0 99%, 0 13%);
@@ -134,5 +140,39 @@
     margin-left:0;
   }
 
+
+}
+
+
+
+@keyframes aniText1 {
+  0%   {  
+    left: 0;
+    top:0;
+    opacity:0;
+   }
+  50%  { 
+    opacity:0;
+   }
+  100% { 
+    top:15px;
+    left: 590px; 
+  }
+}
+
+
+@keyframes aniText2 {
+  0%   { 
+    left: 0;
+    bottom:-60px;
+    opacity:0; 
+  }
+  50%  {
+    opacity:0;
+   }
+  100% { 
+    bottom:-60px;
+    left: 590px;
+  } 
 
 }

@@ -1,6 +1,3 @@
-https://www.google.co.kr/maps/place/%EC%84%9C%EC%9A%B8%EC%97%AD/data=!4m10!1m2!2m1!1z7ISc7Jq47Jet!3m6!1s0x357ca266e3947003:0xe7be97c172b7af6a!8m2!3d37.555946!4d126.972317!15sCgnshJzsmrjsl61aCyIJ7ISc7Jq47JetkgEOc3Vid2F5X3N0YXRpb26aASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVUnhjMDlsWVU5M0VBReABAA!16zL20vMDNubm03?hl=ko
-
-
 var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
 const branch_btns = document.querySelectorAll('.branch li');
 const t_on = document.querySelectorAll('.traffic li')[0];
@@ -65,28 +62,6 @@ function moveTo(target) {
 	// 지도 중심을 이동 시킵니다
 	map.setCenter(moveLatLon); //지도를 중심으로 해서 이동
 }
-
-
-/*
-var imageSrc = 'img/subpage/marker1.png', // 마커이미지의 주소입니다
-	imageSize = new kakao.maps.Size(70, 85), // 마커이미지의 크기입니다
-	imageOption = { offset: new kakao.maps.Point(35, 43) }; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
-
-// 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
-var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-	markerPosition = new kakao.maps.LatLng(37.5116827, 127.0591512); // 마커가 표시될 위치입니다
-
-// 마커를 생성합니다
-var marker = new kakao.maps.Marker({
-	position: markerPosition,
-	image: markerImage, // 마커이미지 설정
-});
-
-// 마커가 지도 위에 표시되도록 설정합니다
-marker.setMap(map);
-*/
-
-
 
 
 
