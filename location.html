@@ -14,7 +14,10 @@
   <!-- cdn 2개 연결 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c2af0cc810d73112eda56c31e614107e"></script><!-- kacao api -->
   <script defer src="js/main.js"></script>
+	 <script defer src="js/location.js"></script>
 </head>
 
 <body>
@@ -87,8 +90,18 @@
 			<h3>location</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptatum veritatis ab sed a iusto minus odit quis voluptatem?</p>
 		 </div>
-		 <div class="wrap">
-			컨텐츠 들어가는 곳
+		 <div class="wrap">	
+			<div>
+				<ul class="traffic">
+					<li><a href="#">View traffic information</a></li>
+					<li class="on"><a href="#">Turn off traffic</a></li>
+				</ul>
+				<ul class="branch">
+					<li class="on" data-index="0"><a href="#">Head office</a></li>
+					<li data-index="1"><a href="#">Branch office</a></li>
+				</ul>	
+			</div>		
+			<div id="map"></div>   
 		 </div>
 
   </div>
