@@ -3,15 +3,17 @@
 
 const base = 'https://www.flickr.com/services/rest/?';
 const method = 'flickr.interestingness.getList';
-const method2 = 'flickr2.interesti2ngness.getLis2t';
+//const method2 = 'flickr2.interesti2ngness.getLis2t';
+const method2 = 'flickr.photos.search';
 const key = '9a7d9833ee775fa36568354172a2f1cd';
 const per_page = 8;
 const frame = document.querySelector('#list');
 
 const url = `${base}method=${method}&api_key=${key}&per_page=${per_page}&format=json&nojsoncallback=1`;
-const url2 = `${base}method=${method2}&api_key=${key}&per_page=${per_page}&format=json&nojsoncallback=1`;
+//const url2 = `${base}method=${method2}&api_key=${key}&per_page=${per_page}&format=json&nojsoncallback=1`;
+const url2 = `${base}method=${method2}&api_key=${key}&per_page=${per_page}&format=json&nojsoncallback=1&tags=쇼파&privacy_filter=1`;
 
-callData(url);
+callData(url2);
 
 function callData(url) {
 	fetch(url)

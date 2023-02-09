@@ -21,8 +21,8 @@ fetch(url)
 				title = title.substr(0, 17) + '...';
 			}
 			let con = el.snippet.description;
-			if (con.length > 80) {
-				con = con.substr(0, 80) + '...';
+			if (con.length > 60) {
+				con = con.substr(0, 60) + '...';
 			}
 			let date = el.snippet.publishedAt;
 			date = date.split('T')[0];
