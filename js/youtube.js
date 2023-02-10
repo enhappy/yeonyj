@@ -1,7 +1,7 @@
 const vidList = document.querySelector('.vidList');
 const key = 'AIzaSyA-9yF7B8KxaGqsXYdIvdb5YX5dPdKRwek';
 const playlistId = 'PLtAZmg231hd_17GPUq7JQNh14KhbR3NRT';
-const num = 7;
+const num = 8;
 const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playlistId}&maxResults=${num}`;
 const btnClose = document.querySelector('.btnClose');
 
@@ -17,12 +17,12 @@ fetch(url)
 
 		items.map((el) => {
 			let title = el.snippet.title;
-			if (title.length >17) {
-				title = title.substr(0, 17) + '...';
+			if (title.length >16) {
+				title = title.substr(0, 16) + '...';
 			}
 			let con = el.snippet.description;
-			if (con.length > 60) {
-				con = con.substr(0, 60) + '...';
+			if (con.length > 45) {
+				con = con.substr(0, 45) + '...';
 			}
 			let date = el.snippet.publishedAt;
 			date = date.split('T')[0];

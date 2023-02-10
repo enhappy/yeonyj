@@ -59,9 +59,14 @@
   }
   .location .wrap > div {
     flex-direction: row;
+    align-items: center;
+    width:100%;
   }
   .location .wrap > div ul {
-    margin: 0 50px 10px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0 10px 10px;
   }
 
 
@@ -75,6 +80,10 @@
   #map {
     width: 100%;
     height: 350px;
+  }
+  .traffic li a, 
+  .branch li a {
+    width:110px;
   }
 
 
