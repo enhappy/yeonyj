@@ -133,6 +133,7 @@
 	.department .wrap {
 		padding: 0 20px;
 	}
+  .department .wrap > strong,
   .departmentImg {
     display:none;
   }
