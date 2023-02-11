@@ -1011,6 +1011,9 @@
 	#brand .inner {
 		width: 100%;
 	}
+	#brand .inner > h1 {
+		width:90%;
+	}
 	#sectionTab section {
     position: relative;
     width: 90%;

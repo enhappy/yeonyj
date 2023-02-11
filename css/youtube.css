@@ -38,6 +38,7 @@
   height:150px;
   padding: 0 10px;
   border:1px solid #eaeaea;
+  box-shadow: 0px 3px 9px rgb(0 0 0 / 3%);
   border-radius: 0 4px 4px 0;
 }
 .vidList article .con h2 {
@@ -67,6 +68,7 @@ figure.pop {
   align-items: center;
   padding: 5vw;
   overflow: hidden;
+  z-index:20;
 }
 figure.pop .btnClose {
   position: absolute;

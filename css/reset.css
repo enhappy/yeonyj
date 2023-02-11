@@ -9,20 +9,18 @@ ul, ol, li {
 	list-style: none;
 }
 
+body {
+  font-family: 'Roboto', 'Noto Sans', sans-serif;
+  font-weight:400;
+  font-size:14px; 
+  txt-redering: optimizeLegibility;
+  -webkit-font-smoothing:antialased;
+}
+
 /* a link */
 a {
 	text-decoration: none;
   color:#181818;
-}
-
-body {
-  font-weight:400;
-  font-size:14px;
-  font-family: 'Roboto', 'Noto Sans', sans-serif;
-  txt-redering: optimizeLegibility;
-  -webkit-font-smoothing:antialased;
-  color:#181818;
-  /* font-family: 'Open Sans', sans-serif;*/
 }
 
 
@@ -33,7 +31,6 @@ fieldset {
 }
 
 /* button */
-/* form */
 button {
   background-color: transparent;
   cursor: pointer;
@@ -62,20 +59,12 @@ textarea::placeholder {
     background: #999;
     vertical-align: middle;
 }
+
 /* 접근성 */
 .hidden {
   position: absolute;
   top: -99999999px;
   opacity: 0;
-}
-.offScreen {
-  position: absolute;
-  top: -9999px;
-  overflow: hidden;
-}
-
-fieldset {
-  border: none;
 }
 
 table {
@@ -83,4 +72,3 @@ table {
 }
 
 
-/* heading 클래스 추가 */

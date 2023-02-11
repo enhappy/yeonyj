@@ -32,8 +32,7 @@
 #gallery #wrap #list li div {
   width: 100%;
   padding: 0;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
+
 }
 #gallery #wrap #list li div a > img {
   width: 100%;
@@ -98,11 +97,10 @@
   animation-timing-function: linear; 
 }
 #gallery #wrap #list li div {
-  clip-path: polygon(100% 0, 100% 100%, 82% 100%, 0 99%, 0 13%);
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%, 0 12%);
 }
 #gallery #wrap #list li div a > img {
   vertical-align: top;
-  clip-path: polygon(100% 0, 100% 100%, 82% 100%, 0 99%, 0 13%);
 }
 
 
@@ -199,4 +197,107 @@
     left: 590px;
   } 
 
+}
+
+
+
+#searchBox {
+  width: 100%;
+  padding: 50px 60px 0px;
+  font-size: 0;
+}
+ #searchBox input[type=text] {
+  width: 300px;
+  height: 30px;
+  background: #eee;
+  border: 1px solid #ddd;
+  padding-left: 10px;
+}
+#searchBox .btnSearch {
+  width: 80px;
+  height: 30px;
+  background: #333;
+  font: bold 12px/30px "arial";
+  text-align: center;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  vertical-align: top;
+}
+
+.loading {
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s;
+  opacity: 1;
+}
+.loading.off {
+  opacity: 0;
+}
+
+/*
+ #list {
+  width: 100%;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s;
+}
+#gallery #wrap #list.on {
+  opacity: 1;
+  transform: translateY(0px);
+}
+#gallery #wrap #list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#gallery #wrap #list li {
+  width: 25%;
+  float: left;
+  padding: 10px;
+}
+#gallery #wrap #list li div {
+  width: 100%;
+  padding: 20px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+#gallery #wrap #list li div a > img {
+  width: 100%;
+  filter: grayscale(100%);
+}
+#gallery #wrap #list li div p {
+  font: 12px/1.2 "arial";
+  color: #777;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#gallery #wrap #list li div:hover a > img {
+  filter: grayscale(0%);
+}*/
+#gallery aside {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index:20;
+}
+#gallery aside img {
+  height: 100%;
+}
+#gallery aside span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  cursor: pointer;
 }

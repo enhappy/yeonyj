@@ -1,0 +1,384 @@
+@charset "utf-8";
+
+@import url('reset.css');
+@import url('slide.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Serif&display=swap');
+
+@font-face {
+    font-family:'Nanum Gothic';     
+    src:url(webfont/NanumGothic.eot);
+    font-style: normal;
+    font-weight: normal; 
+}
+@font-face {
+    font-family:'Nanum Gothic';     
+    src:url(webfont/NanumGothic.woff);
+    font-style: normal;
+    font-weight: normal; 
+}
+
+
+/* ******* 접근성 ******* */
+.visibility-hidden {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 1px;
+  height: 1px; 
+  overflow: hidden;
+  clip: rect(1px,1px,-1px,-1px);
+  white-space: nowrap;
+}
+.screen_out {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+
+/* 건너뛰기를 위한 css : classname 수정하기 */
+[href="#main_page"]{
+  position: absolute;
+  top: 0;
+  right: 100%/* 회면 밖으로 이동 */
+}
+[href="main_page"]:focus {
+  right: auto;
+}
+
+
+
+
+
+/* ******* common 키워드 - 공통 재사용 할때 ******** */
+.clear:after {
+  content:'';
+  display: block;
+  clear: both;
+}
+hr {
+  display:block;
+  height:2px;
+  border:0;
+  margin:0;
+  padding:0;
+}
+
+
+
+
+
+/* ******* form base ********* */
+/* input */
+input {
+  margin:0;
+  padding:0;
+  box-sizing:content-box;
+  vertical-align:top;
+  appearance:none;
+  border:1px solid #e65d5d;
+  color:#555;
+  border-radius:0; 
+  resize: none;
+  font-family:NanumGothic,나눔고딕,'Nanum Gothic','맑은 고딕',HelveticaNeue,DroidSans,Sans-serif,Helvetica;
+}
+
+
+
+/* place holder */
+::-webkit-input-placeholder, ::-webkit-textarea-placeholder {
+  color:#3f51b5;
+}    
+::-moz-input-placeholder, ::-moz-textarea-placeholder {
+  color:#3f51b5;
+}
+
+
+/* textarea */
+textarea {
+  width:100%;
+  margin:0;
+  padding:0;
+  border:0;
+  border-bottom:1px solid #757575;
+  color:#3f51b5;
+  font-family:'Montserrat';
+  font-size:12px;
+  vertical-align:top;
+  border-radius:0;
+  box-sizing:content-box;
+  appearance:none;
+}
+
+
+/* button */
+button {
+ background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+
+
+
+/* checkbox */
+.checkbox {}
+.checkbox:focus {
+  border-width: 2px;
+  border-color: #0d66d0;
+}
+
+.checkbox-label input:focus + .checkbox_box {
+  outline: 2px solid #0d66d0;
+  outline-offset: -1px;
+}
+
+
+
+
+
+/* form - 그룹 정렬 + 재사용 + 폼 기타 태그 추가하기 */
+.form_group {
+  margin-bottom: 15px;
+}
+.field_label {
+  display: block;
+  font-size: 0.8rem;
+}
+.textfield, 
+.dropdown_fixed button {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+
+
+
+
+
+/* a link */
+a { 
+  display: block;
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+  text-decoration:none;
+  color:#323232;
+  color: inherit;
+}
+a:link, 
+a:visited {
+  font-size: 14px;
+  padding: 2px;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #555;
+}
+a:active {
+ 
+}
+
+
+
+/* ----------------- layout --------------------- */
+
+/* 기본 CSS */
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 640px;
+  max-width:640px;
+  margin:0 auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size:13px;
+  line-height: 21px;
+  color: #3c404b;
+}
+#wrapper {}
+#container {
+  transition: margin-left .5s;
+}
+.container {}
+main {}
+.main {}
+.contents {
+  padding: 20px;
+}
+.main-top {
+  padding-top: 155px;
+}
+.main-top2 {
+  padding-top: 100px;
+}
+.sub_top {
+  padding-top: 180px;
+}
+section {
+  width:100%;
+  margin-bottom: 20px;
+  display:flex;
+  flex-wrap: nowrap;
+  justify-content:space-between;
+  align-items:center;
+}
+
+
+
+
+
+/* ----------------- heading(title) + text (해딩정렬 속성 키워드 추가히기) ----------------- */
+h1, h2, h3, h4, h5 {
+    color: #111;
+    letter-spacing: -1px;
+    font-weight: 900;
+}
+h1 {font-size: 3em;}
+h2 {font-size: 2.25em;}
+h3 {font-size: 1.5em;}
+
+
+
+/* 본문내 헤딩 */
+.heading {}
+.heading h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  line-height: 40px;
+}
+.sidenav_list h2 {
+  font-size: 16px;
+  line-height: 36px;
+}
+.list_heading h2 {
+  text-align: center;
+  margin: 25px 0;
+}
+
+
+p {
+  margin: 1.2rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #222;
+}
+
+
+
+
+
+
+/* ------------- TEXT keyword : 재사용 키워드 ------------ */
+.text {
+  word-break: keep-all;
+  word-wrap: break-word;
+  line-height: 1.6;
+}
+.text-light {font-weight:300;}
+.text-normal {font-weight:400;}
+.text-bold {font-weight:700;}
+.text-bolder {font-weight:800;}
+
+
+
+
+
+/* ------------- TEXT ALIGN ------------- */
+.text-left {
+    text-align: left;    
+}
+.text-center {
+    text-align: center;    
+}
+.text-right {
+    text-align: right;    
+}
+
+
+
+
+/* img */
+section .img {
+  text-align: center;
+}
+
+
+
+
+
+/* table */
+table col {
+  width: calc(100% / 6);
+}
+
+
+
+/* add */
+/* #nav */
+#nav {
+  display: block;
+}
+#nav.fixed {
+  display: none;
+}
+#lnb {
+  padding: 20px 0;
+}
+#lnb li {
+  display: inline-block;
+  height: 30px;
+  padding: 0 13px;
+  border: 1px solid #dedfe0;
+  border-radius: 15px;
+  font-size: 14px;
+  line-height: 28px;
+}
+#lnb li.selected {
+  border-color: #3c404b;
+  color: #fff;
+  background-color: #3c404b;
+}
+
+
+
+
+
+#topBtn  {
+  right: 50%;
+  margin-right: -296px;
+  position: fixed;
+  bottom: 2%;
+  width: 56px;
+  height: 56px;
+  border: 1px solid #eff0f2;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px rgb(0 0 0 / 10%);
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

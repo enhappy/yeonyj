@@ -1,0 +1,281 @@
+@charset "utf-8";
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+  display: none;
+}
+.prev, .next {
+  position: absolute;
+  bottom: -45px;
+  cursor: pointer;
+  transition: 0.6s ease;
+}
+.prev {
+  left: 40%;
+  background:url(../images/s_images/ico_friends.png) no-repeat;
+  background-size: 700px 900px;
+  background-position: -150px -510px;
+  width: 32px;
+  height: 32px;
+}
+.next {
+  right: 40%;
+  background:url(../images/s_images/ico_friends.png) no-repeat;
+  background-size: 700px 900px;
+  background-position: -230px -510px;
+  width: 32px;
+  height: 32px;
+}
+.next {
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  color: #000;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;%;
+
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 4px;
+  width: 4px;
+  margin: 0;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot.active {
+  color: #000;
+  width: 12px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #000;
+}
+.dot:hover {
+  background-color: #717171;
+}
+.slide_circle {
+  text-align: center;
+  position: relative;
+  top: 15px;
+  width: 70px;
+  margin: 0 auto;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+/* add */
+.mySlides > div:first-child {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.mySlides .item {
+  width: 190px;
+  margin:0 10px 5px 0;
+}
+.mySlides .item_desc {
+  position: static;
+  color: #000;
+  width: 100%;
+}
+
+.new_section .item > div:first-child:before,
+.mySlides .item > div:first-child:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(0,0,0,.02);
+  content: "";
+  height: 175px;
+  border-radius: 10px;
+}
+
+
+
+/* accordion */
+.accordion {
+  cursor: pointer;
+  width: 100%;
+  outline: none;
+  transition: 0.4s;
+  text-align: left;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 0;
+}
+.accordion .active,
+.accordion:hover {}
+.accordion:after {
+  content: "";
+  background: url("../images/s_images/s_arrow_top.png") top center no-repeat;
+  float: right;
+  background-size: 50%;
+  width:35px;
+  height:35px;
+  display: inline-block;
+  cursor:pointer;
+}
+.accordion.active:after {
+  content: "";
+  background: url("../images/s_images/s_arrow_bottom.png") top center no-repeat;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  background-size: 50%;
+}
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.panel ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.panel li {
+  color: #555;
+}
+.panel li img {
+  width: 54px;
+  border-radius: 50%;
+}
+.panel1 li {
+  width: 20%;
+ margin: 0 0 10px 0; 
+  text-align: center;
+}
+.panel2 li {
+  width: 48%;
+  margin-bottom: 15px;
+}
+
+
+.detail_panel {
+  margin-bottom: 50px;
+}
+.detail_panel .panel1 li {
+  width: 100%;
+  text-align: left;
+}
+.detail_panel .accordion {
+  border-top: 1px solid #ccc;
+  padding: 20px 0;
+}
+
+
+
+
+
+
+
+/* tab */
+.tab {
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  height: 52px;
+}
+.tab button {
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.tab button:hover {}
+.tab button.active {
+  border-bottom: 3px solid #000;
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+}
+
+
+
+
+/* */
+.tab2 {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+
+}
+.tab2 button {
+  display: inline-block;
+  height: 30px;
+  padding: 0 13px;
+  border: 0;
+  border-radius: 15px;
+  font-size: 14px;
+  line-height: 28px;
+  color: #dedfe0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.tab2 button:hover {}
+.tab2 button.active {
+  border: 1px solid #3c404b;
+  color: #3c404b;
+  background-color: #fff;
+}
+
+
+
+/* */
+.tab3 {
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  background-color: #f9f9fa;
+}
+.tab3 button {
+  flex: 1 auto;
+  color: #909092;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.tab3 button:hover {}
+.tab3 button.active {
+  font-weight: bold;
+  color: #000;
+}
+
+
+
+
+
+
