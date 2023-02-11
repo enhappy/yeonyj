@@ -1,8 +1,5 @@
 @charset 'utf-8';
 
-
-
-
 /* heder_sub */
 #header_sub {
 	width:100%;
@@ -262,6 +259,7 @@
 .subContent .inner {
 	width: 1180px;
 	margin: 0 auto;
+	height:auto;
 	min-height: 500px;
 	clear:both;
 }
