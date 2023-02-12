@@ -231,7 +231,9 @@
 	color: #1967d2;
 }
 
-
+main {
+	height:auto;
+}
 
 /* mainVisual 영역 */
 #mainVisual {

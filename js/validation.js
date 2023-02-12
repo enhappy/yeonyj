@@ -16,23 +16,9 @@ btnSubmit.addEventListener('click', (e) => {
 	if (!isPwd('pwd1', 'pwd2', 5)) e.preventDefault();
 });
 
-/*
-동적언어 - 자바스크립트 
 
-let ani = 5;
-어떤 변수든간에 상관없이 다 선언할수있음
-단점 : 만약 변수의 자료형등의 오류가나면 알려주지않음, 찾기어려움
-
-정적언어 - 자바
-
-int ani = 5;
-string ani = "gogo";
-변수선언시 자료형을 제대로 선언하지 않으면 에러
-장점 : 같은 상황에서 오류가 정확하게 나므로 해결이 쉽다
-*/
 
 //1. type이 text인 form요소의 인증함수 (유효성검사)
-
 function isTxt(el, len) {
 	if (len === undefined) len = 5;
 	let input = form.querySelector(`[name=${el}]`);
