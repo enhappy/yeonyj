@@ -282,7 +282,7 @@
 }
 .gnb li {
  position: relative;
- flex: 1;
+ flex: 0 0 25%;
  height: 43px;
  text-align: center;
 }
@@ -360,11 +360,11 @@ button.info_list_global {
 }
 .footer_inner dt {
   float: left;
-  width: 20%;
+  width: 30%;
 }
 .footer_inner dd {
   float: left;
-  width: 80%;
+  width: 70%;
 }
 
 
@@ -471,7 +471,7 @@ button.info_list_global {
   top: 40%;
 }
 .owl-prev i {
-  left: -20px;
+  left: 0;
   width: 32px;
   height: 32px;
   background:url(../images/s_images/ico_friends.png) no-repeat;
@@ -645,7 +645,7 @@ i.fa-arrow-right:before {
   position: absolute;
   left: 10px;
   bottom: 10px;
-  color: #fff !important;
+  color: #999 !important;
 }
 ._3boxs .item_desc span + span {
   font-size: 16px;
@@ -1267,12 +1267,57 @@ i.fa-arrow-right:before {
   .newarrival .owl-carousel:before {
     display:none;
   }
+  .item_text1 {
+    padding: 0 0 0 10px;
+}
+.item_text1 strong + span,
+.item_text1 strong {
+  font-size:12px;
+}
+.item_cart {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+}
+._3boxs .item_desc span + span {
+  font-size: 12px;
+}
+.grap_section .item_text1 strong {
+  font-size:11px;
+}
+.owl-next i, .owl-prev i {
+  top:33%;
+}
+
+
+a:link, a:visited {
+  font-size: 12px; 
+}
+
+
 
 }
 
 
 
 
+
+@media screen and (max-width: 420px) {
+  
+  ._3boxs .video video {
+    width: 120px;
+  }
+  ._3boxs .item_desc {
+    top:220px;
+    left:0;
+    width:100%;
+  }
+  .mySlides .item {
+    width: 80%;
+    margin: 0;
+  }
+
+}
 
 
 
