@@ -334,6 +334,10 @@
 	font: 11px/14px 'arial';
 	color: #fff;		
 }
+#footer_sub .inner address a {
+	font: 11px/14px 'arial';
+	color: #fff;		
+}
 #footer_sub .inner p {
 	padding: 15px 0;;
 	font: 12px/16px 'arial';

@@ -1294,6 +1294,9 @@ a:link, a:visited {
   font-size: 12px; 
 }
 
+.new_section_inner .item {
+  width:45%;
+}
 
 
 }
