@@ -214,7 +214,11 @@
 	background-color: #fff;
 	color: #1967d2;
 }
-
+#header_sub .inner .mainMenu_mo .tools {
+	position: absolute;
+	top: 80%;
+	right: 20px;
+}
 
 
 
