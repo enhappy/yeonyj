@@ -242,7 +242,7 @@
   z-index: 10;
   margin: 0 auto;
   background-color: #fff;
-  /* max-width: 640px; */
+  max-width: 640px; 
   min-width: 320px;
   border-bottom: 1px solid #eff0f2;
 }
@@ -1249,9 +1249,7 @@ i.fa-arrow-right:before {
 
 
 @media screen and (max-width: 640px) {
-  body {
-    background:yellow;
-  }
+
   #wrapper {
     width:100%;
   }
@@ -1265,7 +1263,10 @@ i.fa-arrow-right:before {
   ._3boxs .video video {
     width: 150px;
   }
- 
+  .newarrival .owl-carousel:after,
+  .newarrival .owl-carousel:before {
+    display:none;
+  }
 
 }
 
