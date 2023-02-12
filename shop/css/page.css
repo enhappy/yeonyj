@@ -1,8 +1,5 @@
 @charset "utf-8";
 
-/* 
-@media screen and (min-width: 640px) {}
-@media screen and (max-height: 450px) {} */
 
 /* ----------------- header ----------------- */
 .kakao {
@@ -191,7 +188,7 @@
 .sidenav {
   position: absolute;/* fixed */
   width: 0;
-  height: 100%;
+  height: 100vh;
   top: 0;
   left: 0;
   bottom: 0;
@@ -245,7 +242,7 @@
   z-index: 10;
   margin: 0 auto;
   background-color: #fff;
-  max-width: 640px;
+  /* max-width: 640px; */
   min-width: 320px;
   border-bottom: 1px solid #eff0f2;
 }
@@ -375,7 +372,7 @@ button.info_list_global {
 /* ----------------- body ----------------- */
 /* topbanner_section */
 .topbanner_section {
-  padding: 4px 20px 0;
+  padding: 4px 10px 0 10px;
 }
 .topbanner_section li {
   margin-top: 16px;
@@ -482,7 +479,7 @@ button.info_list_global {
   background-position:-150px -510px;
 }
 .owl-next i {
-  right: -20px; 
+  right: 0; 
   width: 32px;
   height: 32px;
   background:url(../images/s_images/ico_friends.png) no-repeat;
@@ -610,7 +607,8 @@ i.fa-arrow-right:before {
 }
 
 ._1boxs .video video {
-  width: 640px;
+  max-width: 640px;
+  width:100%;
   border-radius: 10px 10px 0 0;
 }
 ._1boxs .item .text span {
@@ -859,13 +857,13 @@ i.fa-arrow-right:before {
 }
 .detail_info {
   position: relative;
+  padding:0 20px 0 20px;
 }
 .detail_text {
   font-size: 14px;
   vertical-align: top;
   line-height: 17px;
 }
-
 .detail_section h2 {
   line-height: 55px;
 }
@@ -913,7 +911,7 @@ i.fa-arrow-right:before {
 .detail_btnwrap {
   position: fixed;
   bottom: 0;
-  width: 640px;
+  /* width: 640px;*/
   margin: 0 auto;
   text-align: center;
 }
@@ -1242,6 +1240,39 @@ i.fa-arrow-right:before {
   background: url("../images/s_images/ico_close.gif") no-repeat;
   background-size: 40%;
 }
+
+
+
+
+
+
+
+
+@media screen and (max-width: 640px) {
+  body {
+    background:yellow;
+  }
+  #wrapper {
+    width:100%;
+  }
+  .mySlides > div:first-child {
+    justify-content: center;
+  }
+  .mySlides .item {
+    width: 40%;
+    margin: 0 20px 5px 20px;
+  }
+  ._3boxs .video video {
+    width: 150px;
+  }
+ 
+
+}
+
+
+
+
+
 
 
 

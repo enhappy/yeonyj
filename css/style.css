@@ -233,6 +233,7 @@
 
 main {
 	height: inherit;
+	overflow-y: scroll;
 }
 
 /* mainVisual 영역 */

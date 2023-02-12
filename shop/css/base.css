@@ -200,18 +200,22 @@ a:active {
   box-sizing: border-box;
 }
 body {
-  width: 640px;
+  /* width: 640px;
   max-width:640px;
-  margin:0 auto;
+  margin:0 auto;*/
   font-family: 'Open Sans', sans-serif;
   font-size:13px;
   line-height: 21px;
   color: #3c404b;
 }
-#wrapper {}
-#container {
-  transition: margin-left .5s;
+#wrapper {
+  max-width: 640px;
+  margin: 0 auto;
 }
+#container {
+  transition:.5s;
+}
+
 .container {}
 main {}
 .main {}
