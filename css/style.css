@@ -232,7 +232,7 @@
 }
 
 main {
-	height:auto;
+	height: inherit;
 }
 
 /* mainVisual 영역 */

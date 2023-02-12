@@ -45,6 +45,7 @@
   margin-top:100px;
   display: none;
 }
+#tab dd a,
 #tab dd.on {
   display: block;
 }
