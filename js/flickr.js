@@ -10,12 +10,10 @@ const input = document.querySelector('#search');
 const btn = document.querySelector('.btnSearch');
 const gal = document.querySelector('#gallery');
 const url = `${base}method=${method}&api_key=${key}&per_page=${per_page}&format=json&nojsoncallback=1`;
-const url2 = `${base}method=${method2}&api_key=${key}&per_page=${per_page}&format=json&nojsoncallback=1&tags=car&privacy_filter=1`;
+const url2 = `${base}method=${method2}&api_key=${key}&per_page=${per_page}&format=json&nojsoncallback=1&tags=furniture&privacy_filter=1`;
 
 //초기 갤러리 화면에 보여지는 데이터를 불러준다
 callData(url2);
-
-
 
 //이벤트위임으로 각 이미지 클릭시 큰이미지를 호출해서 보여주기
 frame.addEventListener('click', (e) => {

@@ -226,7 +226,6 @@
 
 main {
 	height: inherit;
-	overflow-y: scroll;
 }
 
 /* mainVisual 영역 */
@@ -234,7 +233,7 @@ main {
 	width: 100%;
 	height: calc(100vh - 131px);
 	margin-bottom: 70px;
-	background-color: #000;
+	background-color: #ccc;
 }
 #mainVisual video {
 	width: 100%;
@@ -258,11 +257,28 @@ main {
 #sectionTab .sectionTab_Inner {
 	width: 100%;
 	height: 250px;
-	border: 1px solid #999;
 	overflow: hidden;
+	border: 1px solid transparent;
+	border-image: linear-gradient(to right, white 0%, gray 50%, white 100%);
+	border-image-slice: 1;
+}
+#sectionTab .sectionTab_Inner:before {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 1px;
+	width: 500px;
+	height: 208px;
+	background: rgba(223, 233, 243, 0, 9);
+	background: linear-gradient(
+		90deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(223, 233, 243, 1) 70%,
+		rgba(255, 255, 255, 1) 100%
+	);
 }
 #sectionTab nav {
-	background: #e8f0fe;
+	background: #fff;
 }
 #sectionTab nav ul {
 	display: flex;
@@ -287,7 +303,7 @@ main {
 }
 #sectionTab section {
 	position: relative;
-	width: 60%;
+	width: 80%;
 	height: 100%;
 	margin: 0 auto;
 }
@@ -334,7 +350,7 @@ main {
 	top: 35px;
 }
 #brand .inner .wrap article div {
-	width: calc(100% - 130px);
+	width: calc(100% - 80px);
 	padding-left: 40px;
 }
 #brand .inner .wrap article h3 {
@@ -347,7 +363,7 @@ main {
 	color: #aeaeae;
 }
 #brand .inner .wrap article i {
-	font-size: 130px;
+	font-size: 90px;
 	line-height: 40px;
 	color: #999;
 	transition: all 300ms ease;
@@ -736,7 +752,7 @@ main {
 /* faq */
 #faqSection {
 	width: 100%;
-	padding: 70px 0;
+	padding: 70px 0 120px;
 }
 #faqSection .inner {
 	position: relative;
@@ -1116,7 +1132,10 @@ main {
 		padding-left: 20px;
 	}
 	#sectionTab .sectionTab_Inner {
-		height: 200px;
+		height: 250px;
+	}
+	#sectionTab .sectionTab_Inner:before {
+		width: 200px;
 	}
 	#sectionTab section article {
 		padding-top: 15px;

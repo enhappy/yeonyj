@@ -5,7 +5,6 @@ const num = 8;
 const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playlistId}&maxResults=${num}`;
 const btnClose = document.querySelector('.btnClose');
 
-
 fetch(url)
 	.then((data) => {
 		return data.json();
@@ -17,7 +16,7 @@ fetch(url)
 
 		items.map((el) => {
 			let title = el.snippet.title;
-			if (title.length >16) {
+			if (title.length > 16) {
 				title = title.substr(0, 16) + '...';
 			}
 			let con = el.snippet.description;
@@ -28,7 +27,7 @@ fetch(url)
 			date = date.split('T')[0];
 
 			result += `
-        <article>
+        <li>
           <a href="${el.snippet.resourceId.videoId}" class="pic">
             <img src="${el.snippet.thumbnails.medium.url}">
           </a>
@@ -37,7 +36,7 @@ fetch(url)
             <p>${con}</p>
             <span>${date}</span>
           </div>
-        </article>
+        </li>
       `;
 		});
 
