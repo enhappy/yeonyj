@@ -100,7 +100,7 @@
 #header .inner .tools {
 	position: absolute;
 	top: 10px;
-	right: 30px;
+	right: 0;
 }
 #header .inner .tools li {
 	display: inline-block;
@@ -226,6 +226,7 @@
 
 main {
 	height: inherit;
+	overflow: hidden;
 }
 
 /* mainVisual 영역 */
@@ -256,26 +257,11 @@ main {
 }
 #sectionTab .sectionTab_Inner {
 	width: 100%;
-	height: 250px;
+	height: 270px;
 	overflow: hidden;
 	border: 1px solid transparent;
 	border-image: linear-gradient(to right, white 0%, gray 50%, white 100%);
 	border-image-slice: 1;
-}
-#sectionTab .sectionTab_Inner:before {
-	content: '';
-	display: block;
-	position: absolute;
-	bottom: 1px;
-	width: 500px;
-	height: 208px;
-	background: rgba(223, 233, 243, 0, 9);
-	background: linear-gradient(
-		90deg,
-		rgba(255, 255, 255, 1) 0%,
-		rgba(223, 233, 243, 1) 70%,
-		rgba(255, 255, 255, 1) 100%
-	);
 }
 #sectionTab nav {
 	background: #fff;
@@ -298,13 +284,13 @@ main {
 	transition-duration: 0.2s;
 }
 #sectionTab nav ul li.on a {
-	color: #fff;
-	background: #174ea6;
+	background: #e8f0fe;
+	color: #174ea6;
 }
 #sectionTab section {
 	position: relative;
-	width: 80%;
-	height: 100%;
+	width: 95%;
+	height: 80%;
 	margin: 0 auto;
 }
 #sectionTab section article {
@@ -314,8 +300,9 @@ main {
 	position: absolute;
 	top: 0;
 	left: 0;
-	justify-content: center;
-	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	display: none; /* */
 }
 #sectionTab section article.on {
@@ -350,28 +337,27 @@ main {
 	top: 35px;
 }
 #brand .inner .wrap article div {
-	width: calc(100% - 80px);
-	padding-left: 40px;
+	width: 47%;
 }
 #brand .inner .wrap article h3 {
 	margin-bottom: 20px;
 	font: bold 24px/32px 'arial';
 	color: #000;
 }
-#brand .inner .wrap article p {
+#brand .inner .wrap article strong {
+	display: block;
+	margin-bottom: 20px;
+	font: bold 22px/30px 'arial';
+	color: #000;
+}
+#brand .inner .wrap article li {
+	list-style-type: disc;
 	font: 16px/24px 'arial';
 	color: #aeaeae;
 }
-#brand .inner .wrap article i {
-	font-size: 90px;
-	line-height: 40px;
-	color: #999;
-	transition: all 300ms ease;
-	text-shadow: 1px 1px 1px #999;
-}
-#brand .inner .wrap article i:hover {
-	color: #174ea6;
-	transform: rotate(-5deg) scale(1.5);
+#brand .inner .wrap article p {
+	font: 16px/24px 'arial';
+	color: #aeaeae;
 }
 
 /* news 영역 */
@@ -531,7 +517,6 @@ main {
 	background: #ddd;
 }
 #galleryMain .inner .wrap .pic {
-	/* flex-basis: 50%; */
 	width: 50%;
 	border-radius: 4px;
 	overflow: hidden;
@@ -581,7 +566,6 @@ main {
 
 /* swiper */
 #gallery-2 {
-	/*width:100%;*/
 	height: 100%;
 	margin: 0 auto;
 	overflow: hidden;
@@ -1124,15 +1108,15 @@ main {
 		font-size: 60px;
 	}
 	#sectionTab section {
-		width: 100%;
+		width: 90%;
 		height: 80%;
 	}
 	#brand .inner .wrap article div {
-		width: calc(100% - 100px);
-		padding-left: 20px;
+		width: 100%;
+		margin-bottom: 20px;
 	}
 	#sectionTab .sectionTab_Inner {
-		height: 250px;
+		height: 330px;
 	}
 	#sectionTab .sectionTab_Inner:before {
 		width: 200px;
@@ -1140,10 +1124,12 @@ main {
 	#sectionTab section article {
 		padding-top: 15px;
 	}
+	#brand .inner .wrap article strong,
 	#brand .inner .wrap article h3 {
 		margin-bottom: 10px;
 		font: bold 18px/28px 'arial';
 	}
+	#brand .inner .wrap article li,
 	#brand .inner .wrap article p {
 		font: 13px/18px 'arial';
 	}

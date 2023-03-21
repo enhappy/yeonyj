@@ -17,7 +17,7 @@ fetch(url)
 		items.map((el) => {
 			let title = el.snippet.title;
 			if (title.length > 16) {
-				title = title.substr(0, 16) + '...';
+				title = title.substr(0, 18) + '...';
 			}
 			let con = el.snippet.description;
 			if (con.length > 45) {
