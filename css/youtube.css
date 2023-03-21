@@ -6,95 +6,74 @@
 .vidList li {
 	counter-increment: list-number;
 }
-.vidList .pic:before {
+.vidList .con:before {
 	content: counter(list-number);
 	display: inline-block;
-	width: 50px;
-	height: 50px;
-	font: bold 40px/1 'arial';
-	background: #ddd;
+	font: bold italic 40px/1 'Lora';
+	background: transparent;
 	opacity: 0.9;
-	color: #fff;
+	color: #999;
 	text-align: center;
-	line-height: 50px;
 	position: absolute;
-	bottom: 0;
+	top: 20px;
+	left: 25px;
+	z-index: 1;
 }
 .youtube .wrap {
-	width: 100%;
+	width: 1050px;
+	margin: 0 auto;
 }
 .vidList {
 	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: flex-start;
 }
 .vidList li {
-	height: 400px;
-	margin: 0 0 15px 0;
-	padding-right: 15px;
-	padding-left: 15px;
+	margin-bottom: 25px;
+	overflow: hidden;
 }
-.vidList li:nth-of-type(1),
-.vidList li:nth-of-type(8) {
-	flex: 0 0 18%;
+.vidList li:nth-of-type(4) {
+	margin-bottom: 80px;
 }
-.vidList li:nth-of-type(2),
-.vidList li:nth-of-type(7) {
-	flex: 0 0 22%;
+.vidList li:nth-child(odd) .pic {
+	float: right;
 }
-.vidList li:nth-of-type(3),
-.vidList li:nth-of-type(6) {
-	flex: 0 0 25%;
+.vidList li:nth-child(odd) .con {
+	float: left;
 }
-.vidList li:nth-of-type(4),
-.vidList li:nth-of-type(5) {
-	flex: 0 0 35%;
+.vidList li:nth-child(even) .pic {
+	float: left;
 }
-.vidList li:nth-of-type(3) .con,
-.vidList li:nth-of-type(4) .con,
-.vidList li:nth-of-type(5) .con,
-.vidList li:nth-of-type(6) .con {
-	text-align: right;
+.vidList li:nth-child(even) .con {
+	float: right;
 }
-.vidList li:hover {
-	transition: 0.5s;
-	transform: translateY(-10px);
-}
-
 .vidList li:hover .pic img {
 	filter: grayscale(10%);
 }
 .vidList li .pic {
 	display: block;
-	width: 100%;
-	height: 60%;
-	position: relative;
+	width: 70%;
+	height: 250px;
 }
 .vidList li .pic img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	filter: grayscale(70%);
+	border-radius: 4px;
 }
 .vidList li .con {
-	width: 100%;
-	height: 150px;
-	padding: 0 10px;
-	border: 1px solid #eaeaea;
-	box-shadow: 0px 3px 9px rgb(0 0 0 / 3%);
-	border-radius: 0 4px 4px 0;
+	width: 30%;
+	padding: 20px 10px 0 75px;
+	position: relative;
 }
 .vidList li .con h2 {
-	padding: 10px 0;
+	padding: 10px 0 20px;
 	font: bold 16px/24px 'noto-sans';
 	color: #444;
 }
 .vidList li .con p {
 	font: 13px/18px 'arial';
 	color: #666;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 .vidList li .con span {
 	font: 14px/20px 'arial';
@@ -124,43 +103,30 @@ figure.pop .btnClose {
 }
 
 @media screen and (max-width: 1179px) {
-	.vidList li {
-		margin: 0 0 10px 0;
-		padding-right: 10px;
-		padding-left: 10px;
+	.youtube .wrap {
+		width: 100%;
 	}
-	.vidList li:nth-of-type(1),
-	.vidList li:nth-of-type(2),
-	.vidList li:nth-of-type(3),
-	.vidList li:nth-of-type(4),
-	.vidList li:nth-of-type(5),
-	.vidList li:nth-of-type(6),
-	.vidList li:nth-of-type(7),
-	.vidList li:nth-of-type(8) {
-		flex: 0 0 49%;
+	.vidList li:nth-child(odd) {
+		padding-right: 15px;
 	}
-	.vidList li:nth-of-type(3) .con,
-	.vidList li:nth-of-type(4) .con,
-	.vidList li:nth-of-type(5) .con,
-	.vidList li:nth-of-type(6) .con {
-		text-align: left;
+	.vidList li:nth-child(even) {
+		padding-left: 15px;
 	}
 }
 
 @media screen and (max-width: 539px) {
-	.vidList li {
-		margin: 0 0 10px 0;
-		padding-right: 10px;
-		padding-left: 10px;
+	.vidList li:nth-child(odd) .pic,
+	.vidList li:nth-child(odd) .con,
+	.vidList li:nth-child(even) .pic,
+	.vidList li:nth-child(even) .con {
+		float: none;
+		width: 100%;
 	}
-	.vidList li:nth-of-type(1),
-	.vidList li:nth-of-type(2),
-	.vidList li:nth-of-type(3),
-	.vidList li:nth-of-type(4),
-	.vidList li:nth-of-type(5),
-	.vidList li:nth-of-type(6),
-	.vidList li:nth-of-type(7),
-	.vidList li:nth-of-type(8) {
-		flex: 0 0 95%;
+	.vidList li:nth-of-type(4) {
+		margin-bottom: 20px;
+	}
+	.vidList li:nth-child(odd),
+	.vidList li:nth-child(even) {
+		padding: 0 15px;
 	}
 }

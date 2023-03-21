@@ -5,70 +5,67 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-ul, ol, li {
+ul,
+ol,
+li {
 	list-style: none;
 }
 
 body {
-  font-family: 'Roboto', 'Noto Sans', sans-serif;
-  font-weight:400;
-  font-size:14px; 
-  txt-redering: optimizeLegibility;
-  -webkit-font-smoothing:antialased;
+	font-family: 'Roboto', 'Noto Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
 }
 
 /* a link */
 a {
 	text-decoration: none;
-  color:#181818;
+	color: #181818;
 }
-
-
 
 /* form */
 fieldset {
-  border: none;
+	border: none;
 }
 
 /* button */
 button {
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  outline: none;
+	background-color: transparent;
+	cursor: pointer;
+	border: none;
+	outline: none;
 }
 button:hover {
-  background: #333;
-  color: #fff;
+	background: #333;
+	color: #fff;
 }
 input::placeholder,
 textarea::placeholder {
-  font: 12px/16px 'arial';
-	color:#777;
+	font: 12px/16px 'arial';
+	color: #777;
 }
-
 
 .wrap:after {
-	content:""; display:block; clear:both;
+	content: '';
+	display: block;
+	clear: both;
 }
 .txtBar {
-    display: inline-block;
-    width: 1px;
-    height: 11px;
-    margin: 2px 11px 0 11px;
-    background: #999;
-    vertical-align: middle;
+	display: inline-block;
+	width: 1px;
+	height: 11px;
+	margin: 2px 11px 0 11px;
+	background: #999;
+	vertical-align: middle;
 }
 
 /* 접근성 */
 .hidden {
-  position: absolute;
-  top: -99999999px;
-  opacity: 0;
+	position: absolute;
+	top: -99999999px;
+	opacity: 0;
 }
 
 table {
-  border-collapse: collapse;
+	border-collapse: collapse;
 }
-
-
