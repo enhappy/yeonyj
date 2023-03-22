@@ -129,4 +129,11 @@ figure.pop .btnClose {
 	.vidList li:nth-child(even) {
 		padding: 0 15px;
 	}
+	.vidList li .con {
+		padding: 20px 10px 0 50px;
+	}
+	.vidList .con:before {
+		left: 0;
+		width: 30px;
+	}
 }

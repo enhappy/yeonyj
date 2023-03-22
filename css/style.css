@@ -17,7 +17,6 @@
 /* heder */
 #header {
 	width: 100%;
-	border-bottom: 1px solid #dadce0;
 }
 #header .inner {
 	position: relative;
@@ -230,25 +229,70 @@ main {
 }
 
 /* mainVisual 영역 */
+
 #mainVisual {
 	width: 100%;
-	height: calc(100vh - 131px);
+	/* height: calc(100vh - 131px);*/
 	margin-bottom: 70px;
-	background-color: #ccc;
-}
-#mainVisual video {
-	width: 100%;
-	height: 100%;
-	opacity: 0.5;
-	object-fit: cover;
 }
 #mainVisual .inner {
-	width: 1180px;
-	margin: 0 auto;
+	width: 100%;
+}
+
+#galleryTop {
+	width: 100%;
+	height: calc(100vh - 131px);
+	position: relative;
+}
+#galleryTop h1 {
+	font: bold 30px/1 'lora';
+	color: #fff;
 	position: absolute;
-	top: 50%;
-	left: 0;
-	transform: translate(-50%, -50%);
+	top: 65vh;
+	left: 5vw;
+	z-index: 5;
+}
+#galleryTop .showBox {
+	width: 100%;
+	height: 100%;
+}
+#galleryTop .showBox img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+#galleryTop .controls {
+	width: 60%;
+	padding: 50px;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	right: 0;
+	bottom: 20vh;
+}
+#galleryTop .controls ul::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+#galleryTop .controls ul li {
+	float: left;
+	margin-right: 20px;
+}
+#galleryTop .controls ul li a {
+	font: bold 12px/1 'arial';
+	color: #777;
+}
+#galleryTop .controls ul li.on a {
+	color: #fff;
+}
+#galleryTop .controls div {
+	margin: 20px;
+	font-size: 14px;
+	color: #888;
+}
+#galleryTop .controls div strong {
+	font-size: 40px;
+	color: #fff;
 }
 
 /* tab */
@@ -529,6 +573,7 @@ main {
 	background: url(../img/main/banner.jpg) no-repeat center/cover fixed;
 	filter: grayscale(100%);
 	margin: 0 0 70px 0;
+	opacity: 0.7;
 }
 #banner .inner {
 	width: 1180px;
@@ -932,6 +977,7 @@ main {
 	#header .inner {
 		width: 100%;
 		height: 100px;
+		border-bottom: 1px solid #dadce0;
 	}
 	#header .inner > h1 {
 		left: 30px;
@@ -951,19 +997,16 @@ main {
 	/* visual영역 */
 	#mainVisual {
 		height: calc(100vh - 101px);
+		margin-bottom: 30px;
 	}
 	#mainVisual video {
 		display: none;
 	}
 	#mainVisual .inner {
 		width: 100%;
-		padding: 0px 30px;
 	}
 	#mainVisual .inner h1 {
-		font: normal 14vmin/1 'arial';
-	}
-	#mainVisual .inner a {
-		width: 100%;
+		font: bold 30px/1 'lora';
 	}
 
 	/* brand영역 */
@@ -976,6 +1019,8 @@ main {
 	}
 	#brand .inner > h1 {
 		width: 90%;
+		padding-left: 110px;
+		margin-left: 0;
 	}
 	#sectionTab section {
 		position: relative;
@@ -1073,7 +1118,7 @@ main {
 
 	/* visual영역 */
 	#mainVisual {
-		margin-bottom: 20px;
+		margin-bottom: 15px;
 	}
 
 	/* news 영역 */
@@ -1114,6 +1159,7 @@ main {
 	#brand .inner .wrap article div {
 		width: 100%;
 		margin-bottom: 20px;
+		padding-left: 15px;
 	}
 	#sectionTab .sectionTab_Inner {
 		height: 330px;
