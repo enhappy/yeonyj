@@ -1118,7 +1118,10 @@ main {
 
 	/* visual영역 */
 	#mainVisual {
-		margin-bottom: 15px;
+		margin-bottom: 0;
+	}
+	#galleryTop .controls ul li {
+		margin: 0 0 20px;
 	}
 
 	/* news 영역 */
@@ -1145,7 +1148,7 @@ main {
 		margin-bottom: 0;
 	}
 	#brand .inner > h1 {
-		width: 71%;
+		width: 100%;
 		margin-bottom: 25px;
 		font: bold 22px/32px 'Lora';
 	}
@@ -1162,7 +1165,7 @@ main {
 		padding-left: 15px;
 	}
 	#sectionTab .sectionTab_Inner {
-		height: 330px;
+		height: 360px;
 	}
 	#sectionTab .sectionTab_Inner:before {
 		width: 200px;
