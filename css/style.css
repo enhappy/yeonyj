@@ -570,7 +570,7 @@ main {
 #banner {
 	width: 100%;
 	padding: 25px 0;
-	background: url(../img/main/banner.jpg) no-repeat center/cover fixed;
+	background: url(../img/main/bannerB.jpg) no-repeat center/cover fixed;
 	filter: grayscale(100%);
 	margin: 0 0 70px 0;
 	opacity: 0.7;
@@ -999,9 +999,6 @@ main {
 		height: calc(100vh - 101px);
 		margin-bottom: 30px;
 	}
-	#mainVisual video {
-		display: none;
-	}
 	#mainVisual .inner {
 		width: 100%;
 	}
@@ -1065,6 +1062,7 @@ main {
 	#banner {
 		padding: 30px 20px;
 		margin-bottom: 50px;
+		background: url(../img/main/bannerS.jpg) no-repeat center/cover fixed;
 	}
 	#banner .inner {
 		width: 100%;
