@@ -18,6 +18,7 @@
 	top: 20px;
 	left: 25px;
 	z-index: 1;
+	text-shadow: 1px 1px 1px #aeaeae;
 }
 .youtube .wrap {
 	width: 1050px;
@@ -66,13 +67,13 @@
 	position: relative;
 }
 .vidList li .con h2 {
-	padding: 10px 0 20px;
+	padding: 6px 0 20px;
 	font: bold 16px/24px 'noto-sans';
-	color: #444;
+	color: #999;
 }
 .vidList li .con p {
 	font: 13px/18px 'arial';
-	color: #666;
+	color: #999;
 	margin-bottom: 15px;
 }
 .vidList li .con span {

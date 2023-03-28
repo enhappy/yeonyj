@@ -64,7 +64,7 @@
 	position: absolute;
 	top: 15px;
 	left: 665px;
-	color: #183153;
+	color: #5f6368;
 	/* writing-mode: vertical-rl; */
 	animation-name: aniText1;
 	animation-duration: 1.5s;
@@ -81,6 +81,7 @@
 .gallery-title1 em,
 .gallery-title2 em {
 	font: normal 14px/20px 'arial';
+	color: #999;
 }
 .gallery-title2 {
 	position: absolute;
@@ -88,7 +89,7 @@
 	left: 205px;
 	max-width: 300px;
 	font: bold 24px/32px 'arial';
-	color: #183153;
+	color: #5f6368;
 	text-align: right;
 	text-orientation: mixed;
 	animation-name: aniText2;
@@ -126,13 +127,13 @@
 	.gallery-title1 {
 		top: -30px;
 		left: 20px;
-		color: #183153;
+		color: #5f6368;
 		writing-mode: horizontal-tb;
 	}
 	.gallery-title2 {
 		bottom: -50px;
 		left: 20px;
-		color: #183153;
+		color: #5f6368;
 		writing-mode: none;
 	}
 	.gallery-title1 em,

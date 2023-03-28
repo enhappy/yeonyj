@@ -93,7 +93,7 @@
 }
 #header_sub .inner .tools li a {
 	font: 12px/16px 'arial';
-	color: #777;
+	color: #ccc;
 }
 #header_sub .inner .tools li a:hover {
 	border-bottom: 1px solid #888;
@@ -270,7 +270,7 @@
 	position: relative;
 	margin: 30px;
 	font: 14px/20px 'arial';
-	color: #aaa;
+	color: #999;
 }
 .text-center h4 + p:before {
 	content: '';

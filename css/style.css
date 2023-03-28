@@ -106,7 +106,7 @@
 }
 #header .inner .tools li a {
 	font: 12px/16px 'arial';
-	color: #777;
+	color: #999;
 }
 #header .inner .tools li a:hover {
 	border-bottom: 1px solid #888;
@@ -321,7 +321,7 @@ main {
 	width: 100%;
 	height: 100%;
 	font: bold 16px/24 'arial';
-	color: #999;
+	color: #aeaeae;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -456,7 +456,7 @@ main {
 #news .inner .wrap article p {
 	margin-bottom: 40px;
 	font: 16px/24px 'arial';
-	color: #999;
+	color: #aeaeae;
 }
 #news .inner .wrap article strong {
 	display: block;
@@ -485,7 +485,7 @@ main {
 	transition-duration: 0.2s;
 }
 #news .inner .wrap article a:hover {
-	background: #5f6368;
+	background: #999;
 	opacity: 0.6;
 	color: #fff;
 }
