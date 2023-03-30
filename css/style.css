@@ -276,10 +276,10 @@ main {
 }
 #galleryTop .controls ul li {
 	float: left;
-	margin-right: 20px;
+	margin-right: 35px;
 }
 #galleryTop .controls ul li a {
-	font: bold 12px/1 'arial';
+	font: bold 16px/24px 'arial';
 	color: #777;
 }
 #galleryTop .controls ul li.on a {

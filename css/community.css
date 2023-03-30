@@ -91,8 +91,11 @@
 	padding: 10px;
 	border-bottom: 1px solid #aaa;
 	text-align: center;
+	color: #999;
 }
-
+.community table tr td a {
+	color: #5f6368;
+}
 .community table tr td a:hover {
 	text-decoration: underline;
 }

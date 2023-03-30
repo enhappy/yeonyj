@@ -93,7 +93,7 @@
 }
 #header_sub .inner .tools li a {
 	font: 12px/16px 'arial';
-	color: #ccc;
+	color: #999;
 }
 #header_sub .inner .tools li a:hover {
 	border-bottom: 1px solid #888;
