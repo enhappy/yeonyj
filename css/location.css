@@ -33,6 +33,13 @@
 	transition-duration: 0.2s;
 	cursor: hand;
 }
+
+.traffic li a:hover,
+.branch li a:hover {
+	background: #999;
+	opacity: 0.6;
+	color: #fff;
+}
 .traffic li.on a,
 .branch li.on a {
 	background-color: #174ea6;
@@ -40,15 +47,9 @@
 }
 .traffic li.on a:hover,
 .branch li.on a:hover {
-	background-color: #e8f0fe;
-	color: #174ea6;
-	border: 1px solid #174ea6;
-}
-.traffic li a:hover,
-.branch li a:hover {
-	background: #999;
-	opacity: 0.6;
+	background-color: #174ea6;
 	color: #fff;
+	opacity: 1;
 }
 .location .wrap > div ul li {
 	margin-bottom: 5px;
